@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Ethical Cloud Forum</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0b3d91, #1e88e5);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #0b3d91;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0b3d91;
+    }
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .topic {
+      background: #eef3fb;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .topic:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-top: 1rem;
+      background: #0b3d91;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .stat-box {
+      background: #e0e8f5;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Ethical Cloud Forum</h1>
+    <p>Un espace citoyen pour débattre, comprendre et construire le futur du cloud éthique</p>
+  </header>
+
+  <nav>
+    <a href="#topics">Sujets</a>
+    <a href="#observatoire">Observatoire</a>
+    <a href="#ressources">Ressources</a>
+    <a href="#stats">Stats</a>
+    <a href="#rejoindre">Rejoindre</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>🔍 Rechercher un sujet</h2>
+      <input type="text" placeholder="Ex. : souveraineté, chiffrement, cloud" />
+    </section>
+
+    <section class="card" id="topics">
+      <h2>💬 Sujets en discussion</h2>
+      <div class="topics-grid">
+        <div class="topic"><h3>Vie privée & RGPD</h3><p>Comment garantir nos droits face aux GAFAM ?</p></div>
+        <div class="topic"><h3>Cloud souverain</h3><p>Pourquoi héberger localement est un acte politique.</p></div>
+        <div class="topic"><h3>Écologie & numérique</h3><p>Quel est le vrai coût environnemental de nos outils digitaux ?</p></div>
+        <div class="topic"><h3>Outils libres & open source</h3><p>Partage de ressources, projets et entraide communautaire.</p></div>
+        <div class="topic"><h3>Lois et politique numérique</h3><p>Ce que la loi suisse (et européenne) permet ou interdit vraiment.</p></div>
+        <div class="topic"><h3>Idées & Prototypes</h3><p>Lancez vos projets ou votez pour les plus prometteurs !</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="observatoire">
+      <h2>📊 Observatoire de la souveraineté numérique</h2>
+      <ul>
+        <li>⚡ Indice de dépendance aux GAFAM par pays</li>
+        <li>🌿 Pourcentage d'énergie verte par hébergeur</li>
+        <li>🔐 Comparatif des politiques de vie privée (AWS / Google / Infomaniak / OVH...)</li>
+      </ul>
+    </section>
+
+    <section class="card" id="ressources">
+      <h2>📄 Ressources & outils</h2>
+      <ul>
+        <li>Guide pour quitter Google facilement</li>
+        <li>Pack d’outils pour protéger sa vie privée (mail, navigateur, cloud...)</li>
+        <li>Tutoriels pour héberger soi-même ses services</li>
+      </ul>
+    </section>
+
+    <section class="card" id="stats">
+      <h2>📈 Statistiques dynamiques</h2>
+      <div class="stats">
+        <div class="stat-box"><strong>3 200</strong><br/>participants actifs</div>
+        <div class="stat-box"><strong>92%</strong><br/>utilisent un navigateur libre</div>
+        <div class="stat-box"><strong>65%</strong><br/>ont migré hors GAFAM en partie</div>
+        <div class="stat-box"><strong>12</strong><br/>contributions validées par semaine</div>
+      </div>
+    </section>
+
+    <section class="card" id="rejoindre">
+      <h2>🚀 Rejoindre l’initiative</h2>
+      <p>Participez aux discussions, proposez des sujets, co-construisez un cloud plus juste.</p>
+      <form>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" placeholder="Ex : luc.ethique" />
+        <label for="idee">Votre idée ou sujet à proposer</label>
+        <textarea id="idee" rows="4" placeholder="Ex : Créer une alternative à Google Forms..."></textarea>
+        <button type="submit">Envoyer ma proposition</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    Prototype par Steve Raffner | Un projet possible pour Infomaniak Labs
+  </footer>
+</body>
+</html>
